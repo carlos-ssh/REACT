@@ -1,7 +1,18 @@
 import React from 'react';
 import './Form.css';
 
-const Form = () => {
+const Form = ({ setInputText }) => {
+  const inputTextHandler = (e) => {
+    setInputText(e.target.value);
+  };
+  const submitTodoHandler = (e) => {
+    e.preventDefault();
+    setTodos([
+      ...todos,
+      {text: inputText, completed: false, id: Math.random() * 1000},
+    ]);
+  };
+
   return (
     <div>
       <div>
@@ -9,8 +20,8 @@ const Form = () => {
       </div>
       <div>
         <form>
-          <input type="text" name="task" placeholder="Task" />
-          <button type="submit" className="btn" placeholder="Add Task">Add Task</button>
+          <input onChange={ inputTextHandler } type="text" name="task" placeholder="Task" />
+          <button onClick={ submitTodoHandler }type="submit" className="btn" placeholder="Add Task">Add Task</button>
         </form>
         <div>
           <select name="todos" className="filter-todo">
