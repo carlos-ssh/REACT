@@ -1,13 +1,20 @@
+import React from 'react';
 import './TodoList.css';
+import Todo from './Todo';
 
-const TodoList = () => {
+const TodoList = ({ todos, setTodos}) => {
+
   return (
     <div className="todo-list">
-      <h1>Your Pending tasks:</h1>
       <ul>
-        <li>Buy Milk</li>
-        <li>Buy Eggs</li>
-        <li>Buy Bread</li>
+        {todos.map((todo) => {
+          <Todo
+            setTodos={ setTodos }
+            todos={ todos }
+            text={ todo.text }
+            key={ todo.id }
+          />
+        })}
       </ul>
     </div>
   );

@@ -9,14 +9,22 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <h1>
           To Do List:
         </h1>
-      </header>
+      </div>
       <div>
-        <Form inputText={ inputText } getTodo={ todos } placeTodos={ setTodos }  setInputText={ setInputText }/>
-        <TodoList />
+        <Form
+          inputText={ inputText }
+          todos={ todos }
+          setTodos={ setTodos }
+          setInputText={ setInputText }
+        />
+        <TodoList
+          setTodos={ setTodos }
+          todos={ todos }
+        />
       </div>
     </div>
   );
