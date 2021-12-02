@@ -9,7 +9,7 @@ const Nav = () => {
         <ul>
           <li>
             <FaClipboard className="atag icon" />
-            <a href="#" className="atag"> TODO's</a>
+            <a href="/" className="atag"> TODO's</a>
           </li>
         </ul>
       </nav>

@@ -83,3 +83,15 @@
   color: black;
   transition: all 1s ease-in-out;
 }
+
+.done:hover {
+  background-color: #3cff00;
+  color:#000;
+  transition: all 1s ease-in-out;
+}
+
+.del:hover {
+  background-color: #ff0000;
+  color: #000;
+  transition: all 1s ease-in-out;
+}
