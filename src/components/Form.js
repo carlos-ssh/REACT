@@ -6,8 +6,8 @@ const Form = ({
   todos,
   setTodos,
   inputText,
-  setStatus
-  }) => {
+  setStatus,
+}) => {
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
@@ -16,7 +16,7 @@ const Form = ({
     e.preventDefault();
     setTodos([
       ...todos,
-      {text: inputText, completed: false, id: Math.random() * 1000},
+      { text: inputText, completed: false, id: Math.random() * 1000 },
     ]);
     setInputText('');
   };
@@ -31,15 +31,15 @@ const Form = ({
         <form className="form">
           <input
             className="input"
-            value={ inputText }
-            onChange={ inputTextHandler }
+            value={inputText}
+            onChange={inputTextHandler}
             type="text"
             name="task"
             placeholder="Task"
           />
           <button
             className="button-submit"
-            onClick={ submitTodoHandler }
+            onClick={submitTodoHandler}
             type="submit"
             placeholder="+ Add Task"
           >
@@ -47,7 +47,7 @@ const Form = ({
           </button>
         </form>
         <div className="div-dd">
-          <select onChange={ statusHandler } name="todos" className="filter-todo">
+          <select onChange={statusHandler} name="todos" className="filter-todo">
             <option value="all">All</option>
             <option value="completed">Completed</option>
             <option value="uncompleted">Uncompleted</option>
@@ -56,6 +56,6 @@ const Form = ({
       </div>
     </div>
   );
-}
+};
 
 export default Form;

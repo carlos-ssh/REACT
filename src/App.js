@@ -42,29 +42,29 @@ function App() {
   };
 
   const getLocalTodos = () => {
-    if(localStorage.getItem('todos') === null) {
+    if (localStorage.getItem('todos') === null) {
       localStorage.setItem('todos', JSON.stringify([]));
-    }else {
-      let todoLocal = JSON.parse(localStorage.getItem('todos'));
+    } else {
+      const todoLocal = JSON.parse(localStorage.getItem('todos'));
       setTodos(todoLocal);
     }
-  }
+  };
 
   return (
     <div className="App">
       <Nav />
       <div>
         <Form
-          inputText={ inputText }
-          todos={ todos }
-          setTodos={ setTodos }
-          setInputText={ setInputText }
-          setStatus={ setStatus }
-          />
+          inputText={inputText}
+          todos={todos}
+          setTodos={setTodos}
+          setInputText={setInputText}
+          setStatus={setStatus}
+        />
         <TodoList
-          filteredTodos={ filteredTodos }
-          setTodos={ setTodos }
-          todos={ todos }
+          filteredTodos={filteredTodos}
+          setTodos={setTodos}
+          todos={todos}
         />
       </div>
       <Footer />

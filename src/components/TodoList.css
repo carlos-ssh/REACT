@@ -1,5 +1,4 @@
 
-
 .todo-list {
   width: 45%;
   margin: 0 auto;
@@ -32,11 +31,10 @@
 
 .done,
 .del {
-  border: 1px solid #ccc;
+  border: 1px solid rgba(236, 235, 235, 0.397);
   font-weight: bold;
   cursor: pointer;
   padding: 15px;
-  border: none;
   color: white;
   width: 15%;
 }
@@ -63,7 +61,6 @@
 
 .text-center {
   text-align: center;
-
 }
 
 .text-center a {
@@ -86,12 +83,12 @@
 
 .done:hover {
   background-color: #3cff00;
-  color:#000;
+  color: #000;
   transition: all 1s ease-in-out;
 }
 
 .del:hover {
-  background-color: #ff0000;
+  background-color: #f00;
   color: #000;
   transition: all 1s ease-in-out;
 }
