@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import Form from './components/Form';
 import TodoList from './components/TodoList';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 function App() {
   const [inputText, setInputText] = useState('');
@@ -9,11 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="App-header">
-        <h1>
-          To Do List:
-        </h1>
-      </div>
+      <Nav />
       <div>
         <Form
           inputText={ inputText }
@@ -26,6 +24,7 @@ function App() {
           todos={ todos }
         />
       </div>
+      <Footer />
     </div>
   );
 }

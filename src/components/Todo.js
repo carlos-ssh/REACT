@@ -1,5 +1,8 @@
 import React from 'react';
+import { BsCheckCircleFill, BsFillTrashFill } from 'react-icons/bs';
 import './TodoList.css';
+
+
 
 const Todo = ({ text, todo, todos, setTodos }) => {
   const deleteHandler = () => {
@@ -20,8 +23,12 @@ const Todo = ({ text, todo, todos, setTodos }) => {
   return (
     <div className="todo">
       <li className={`todo-item ${todo.completed ? 'active' : ""}`}>{ text }</li>
-      <button onClick={completeHandler} className="done">Complete</button>
-      <button onClick={deleteHandler} className="del">Remove</button>
+      <button onClick={completeHandler} className="done">
+        <BsCheckCircleFill />
+      </button>
+      <button onClick={deleteHandler} className="del">
+        <BsFillTrashFill />
+      </button>
     </div>
   );
 }

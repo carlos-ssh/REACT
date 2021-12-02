@@ -15,13 +15,11 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
   };
 
   return (
-    <div>
-      <div>
-        <h1>Form</h1>
-      </div>
-      <div>
-        <form>
+    <div className="container">
+      <div className="container-form">
+        <form className="form">
           <input
+            className="input"
             value={ inputText }
             onChange={ inputTextHandler }
             type="text"
@@ -29,15 +27,15 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
             placeholder="Task"
           />
           <button
+            className="button-submit"
             onClick={ submitTodoHandler }
             type="submit"
-            className="btn"
-            placeholder="Add Task"
+            placeholder="+ Add Task"
           >
             Add Task
           </button>
         </form>
-        <div>
+        <div className="div-dd">
           <select name="todos" className="filter-todo">
             <option value="all">All</option>
             <option value="completed">Completed</option>

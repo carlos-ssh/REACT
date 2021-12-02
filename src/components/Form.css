@@ -1,5 +1,56 @@
-.filter-todo {
-  display: flex;
-  flex-direction: row;
+.container {
+  width: 100%;
 }
 
+.container-form {
+  background-color: #7e7e7e;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 35px auto;
+  display: flex;
+  padding: 35px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 130px;
+}
+
+.input,
+.button-submit,
+.filter-todo {
+  padding: 10px 25px;
+  font-size: 14px;
+}
+
+.nav {
+  background-color: #7e7e7e;
+  list-style-type: none;
+  color: #fff;
+  height: 55px;
+  padding-left: 30px;
+  margin-bottom: 35px;
+}
+
+.atag {
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.icon {
+  padding-top: 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
