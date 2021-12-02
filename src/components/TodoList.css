@@ -1,3 +1,44 @@
 .todo-list {
   border: 1px solid #ccc;
 }
+
+.todo {
+  display: flex;
+}
+
+.todo-item {
+  border: 1px solid #ccc;
+  background-color: #bbbbbb;
+  padding: 10px;
+  list-style-type: none;
+  font-family: Times, 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 25px;
+  width: 85%;
+}
+
+.done {
+  background-color: green;
+}
+
+.del {
+  background-color: red;
+}
+
+.done,
+.del {
+  border: 1px solid #ccc;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  color: white;
+  width: 15%;
+}
+
+.completed,
+.active {
+  background-color: #afff97;
+  border: none;
+  text-align: right;
+}
