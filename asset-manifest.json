@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/reactive/static/css/main.d34c5df2.chunk.css",
-    "main.js": "/reactive/static/js/main.09c8b01c.chunk.js",
-    "main.js.map": "/reactive/static/js/main.09c8b01c.chunk.js.map",
-    "runtime-main.js": "/reactive/static/js/runtime-main.2ede05a9.js",
-    "runtime-main.js.map": "/reactive/static/js/runtime-main.2ede05a9.js.map",
-    "static/js/2.e19002b1.chunk.js": "/reactive/static/js/2.e19002b1.chunk.js",
-    "static/js/2.e19002b1.chunk.js.map": "/reactive/static/js/2.e19002b1.chunk.js.map",
-    "index.html": "/reactive/index.html",
-    "static/css/main.d34c5df2.chunk.css.map": "/reactive/static/css/main.d34c5df2.chunk.css.map",
-    "static/js/2.e19002b1.chunk.js.LICENSE.txt": "/reactive/static/js/2.e19002b1.chunk.js.LICENSE.txt"
+    "main.css": "/todos-react/static/css/main.d34c5df2.chunk.css",
+    "main.js": "/todos-react/static/js/main.09c8b01c.chunk.js",
+    "main.js.map": "/todos-react/static/js/main.09c8b01c.chunk.js.map",
+    "runtime-main.js": "/todos-react/static/js/runtime-main.d80fb3d5.js",
+    "runtime-main.js.map": "/todos-react/static/js/runtime-main.d80fb3d5.js.map",
+    "static/js/2.e19002b1.chunk.js": "/todos-react/static/js/2.e19002b1.chunk.js",
+    "static/js/2.e19002b1.chunk.js.map": "/todos-react/static/js/2.e19002b1.chunk.js.map",
+    "index.html": "/todos-react/index.html",
+    "static/css/main.d34c5df2.chunk.css.map": "/todos-react/static/css/main.d34c5df2.chunk.css.map",
+    "static/js/2.e19002b1.chunk.js.LICENSE.txt": "/todos-react/static/js/2.e19002b1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2ede05a9.js",
+    "static/js/runtime-main.d80fb3d5.js",
     "static/js/2.e19002b1.chunk.js",
     "static/css/main.d34c5df2.chunk.css",
     "static/js/main.09c8b01c.chunk.js"
