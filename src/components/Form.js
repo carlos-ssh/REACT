@@ -28,7 +28,7 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
             name="task"
             placeholder="Task"
           />
-          <button 
+          <button
             onClick={ submitTodoHandler }
             type="submit"
             className="btn"
